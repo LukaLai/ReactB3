@@ -8,10 +8,11 @@ export default function NetworksList (props) {
     <>
      {props.networks.map((network) => (
         <Network
+        key= {network.id}
         id={network.id}
         name={network.name}
         company={network.company}
-        />
+              />
     ))}
     </>
    )

@@ -5,8 +5,9 @@ import {
      Route
 } from 'react-router-dom';
 
-import Login from '../views/Login';
-import HomePage from '../views/HomePage';
+import Login from './Login';
+import HomePage from './HomePage';
+import DashBoard from './Dashboard';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
           <Route index element={<Login />} />
           <Route path='HomePage' element={<HomePage />}/> 
+          <Route path='Dashboard' element={<DashBoard/>}/>
       </Routes>
     </BrowserRouter>
   );
